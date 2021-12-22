@@ -2,8 +2,8 @@
   <div id="app">
     <BaseInput label="Username" type="text" placeholder="Username" v-model="username"/>
     <BaseInput label="Password" type="password" placeholder="********" v-model="password"/>
-    <BaseInput label="Checkbox" type="checkbox" pvalue="X" v-model="checkbox"/>
-    <BaseInput label="radio" type="radio" pvalue="HTML" v-model="radio" />
+    <BaseInput label="Checkbox" type="checkbox" v-model="checkbox"/>
+    <BaseInput label="radio" type="radio"  v-model="radio" />
     <br/>
     {{ username }} - {{ password }} - {{ checkbox }} - {{ radio }}
   </div>

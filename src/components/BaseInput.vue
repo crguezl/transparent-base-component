@@ -15,7 +15,6 @@
 export default {
   name: "BaseInput",
   props: {
-    pvalue: { type: String, default: '' },
     label: String,
     type: String,
     placeholder: { type: String, default: '' }
@@ -27,7 +26,7 @@ export default {
 
       console.log(event.target.value);
 
-      this.$emit('input', this.value || this.pvalue || event.target.value)
+      this.$emit('input', event.target.value)
     }
   }
 };
