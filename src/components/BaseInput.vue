@@ -22,8 +22,6 @@ export default {
   methods: {
     replicate(event) {
       console.log(this.value);
-      console.log(this.pvalue);
-
       console.log(event.target.value);
 
       this.$emit('input', event.target.value)
