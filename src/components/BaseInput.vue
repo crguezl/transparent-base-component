@@ -1,11 +1,11 @@
 <template>
-  <div class="hello">
+  <div>
     <label>
       {{ label }}
       <input
         :type="type"
         :placeholder="placeholder"
-        @input="$emit('input', $event.target.value)"
+        @input="replicate($event)"
       >
     </label>
   </div>
@@ -15,10 +15,20 @@
 export default {
   name: "BaseInput",
   props: {
+    pvalue: { type: String, default: '' },
     label: String,
     type: String,
-    placeholder: String
+    placeholder: { type: String, default: '' }
+  },
+  methods: {
+    replicate(event) {
+      console.log(this.value);
+      console.log(this.pvalue);
+
+      console.log(event.target.value);
+
+      this.$emit('input', this.value || this.pvalue)
+    }
   }
 };
 </script>
-
