@@ -27,7 +27,7 @@ export default {
 
       console.log(event.target.value);
 
-      this.$emit('input', this.value || this.pvalue)
+      this.$emit('input', this.value || this.pvalue || event.target.value)
     }
   }
 };
