@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --dest docs",
     "lint": "vue-cli-service lint",
-    "push": "git add docs; git ci -am save; git push"
+    "push": "npm run  build; git add docs; git ci -am save; git push"
   },
   "dependencies": {
     "core-js": "^3.6.5",
