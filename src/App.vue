@@ -6,6 +6,14 @@
     <BaseInput label="radio" type="radio"  v-model="radio" />
     <br/>
     {{ username }} - {{ password }} - {{ checkbox }} - {{ radio }}
+    <br/>
+    <hr/>
+    <br/>
+    <input
+      v-bind:value="searchText"
+      v-on:input="searchText = $event.target.value"
+    >
+    <h1>{{searchText}}</h1>
   </div>
 </template>
 
@@ -15,14 +23,16 @@ import BaseInput from "./components/BaseInput";
 export default {
   name: "App",
   components: {
-    BaseInput
+    BaseInput,
   },
   data() {
     return {
       username: "",
       password: "",
       checkbox: "",
-      radio: ""
+      radio: "",
+      /////////
+      searchText: "Input your text here"
     };
   }
 };
