@@ -13,6 +13,9 @@ See the example running at: <https://crguezl.github.io/transparent-base-componen
 
 
 ## Project setup
+
+The project was made with Vue Cli
+
 ```
 npm install
 ```
