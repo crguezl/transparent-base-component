@@ -3,6 +3,9 @@
 See <https://simedia.tech/blog/creating-a-transparent-base-component-with-vue-js/>
 and <https://crguezl.github.io/learning-vue-geting-started-guide/#creating-a-transparent-base-component-with-vue.js>
 
+
+See it running at: <https://vuejs.org/v2/guide/components.html#Using-v-model-on-Components>
+
 ## Project setup
 ```
 npm install
