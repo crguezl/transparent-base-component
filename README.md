@@ -9,7 +9,7 @@ and
 * <https://vuejs.org/v2/guide/components.html#Using-v-model-on-Components>
 
 
-See it running at: <https://crguezl.github.io/transparent-base-component/>
+See the example running at: <https://crguezl.github.io/transparent-base-component/>
 
 
 ## Project setup
